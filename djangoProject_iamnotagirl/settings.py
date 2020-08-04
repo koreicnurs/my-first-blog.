@@ -77,12 +77,8 @@ WSGI_APPLICATION = 'djangoProject_iamnotagirl.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangogirls',
-        'USER': 'xyz',
-        'PASSWORD': 'nokian97',
-        'HOST': 'localhost',
-        'POST': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
